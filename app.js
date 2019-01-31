@@ -65,7 +65,7 @@ class Shelf {
             alertDiv.style.display = "none";
         }, 3000);
     }
-    addBook() {
+    addBook(e) {
         // HTML Elements
         let title = document.getElementById("bookTitle").value,
             author = document.getElementById("bookAuthor").value,
@@ -93,6 +93,7 @@ class Shelf {
             DB.insert("books", newBook);
             Shelf.alertMsg("Book added!","green");
         }
+        e.preventDefault();
     }
     delBook(e) {
         // Event Delegation
