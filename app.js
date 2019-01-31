@@ -2,8 +2,8 @@ class DB {
     static getTable(table) {
         if ( !(localStorage.getItem(table)) ) {
             let books = [
-                new Book("Book Example 1", "Author 1", "Good"),
-                new Book("Book Example 2", "Author 2", "Bad")
+                new Book("Book Example 1", "Author 1", 0),
+                new Book("Book Example 2", "Author 2", 1)
             ];
             localStorage.setItem( table, JSON.stringify( books ));
         }
