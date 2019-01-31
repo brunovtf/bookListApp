@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>My Book List - BFreitas</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <form>
+        <div class="twelve column" style="margin-top: 5%">
+          <img src="https://img.icons8.com/ios/100/000000/bookmark.png">
+          <h2>My Book List</h2>
+          <br>
+          <div style="padding:5px; color: white; display:none; font-weight: bold;" id="alertDiv"></div>
+          <label for="bookTitle">Book Title</label>
+          <input class="u-full-width" type="text" id="bookTitle">
+          <label for="bookAuthor">Author</label>
+          <input class="u-full-width" type="text" id="bookAuthor">
+          <label for="bookRating">How would you describe the book?</label>
+          <select class="u-full-width" id="bookRating">
+              <option value="0">Bad</option>
+              <option value="1">Common</option>
+              <option value="2">Good</option>
+              <option value="3">Exceptional</option>
+            </select>
+          <input id="addBookBtn" class="button-primary" type="submit" value="Add Book">
+          <hr>
+        </div>
+      </form>
+      <div class="twelve column">
+        <table class="u-full-width">
+            <thead>
+              <tr>
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>Rating</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="bookList">
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
